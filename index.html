@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Texas Cleaners</title>
+
+<style>
+body { margin:0; font-family: Arial; color:#333; }
+
+header {
+  background:#0b3d91; color:#fff; text-align:center;
+  padding:15px;
+}
+
+header img {
+  max-width:120px;
+  display:block;
+  margin:0 auto 10px;
+}
+
+.scrolling-bar {
+  overflow:hidden; background:#062d6b; color:#fff; padding:10px 0;
+}
+.scrolling-text {
+  white-space:nowrap; display:inline-block;
+  animation:scroll 18s linear infinite;
+}
+@keyframes scroll {
+  from {transform:translateX(100%);}
+  to {transform:translateX(-100%);}
+}
+
+.hero {
+  text-align:center; padding:60px 20px; background:#f5f7fa;
+}
+.btn {
+  background:#0b3d91; color:#fff;
+  padding:12px 20px; text-decoration:none;
+  border-radius:5px; display:inline-block; margin:10px;
+}
+
+.section { padding:40px 20px; text-align:center; }
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.card {
+  padding:20px; border:1px solid #ddd; border-radius:8px;
+}
+
+form input, form textarea {
+  width:90%; padding:10px; margin:8px 0;
+  border:1px solid #ccc; border-radius:5px;
+}
+
+form button {
+  background:#0b3d91; color:#fff;
+  padding:12px 20px; border:none; border-radius:5px;
+}
+
+.map {
+  width:100%; height:300px; border:0;
+}
+
+footer {
+  background:#0b3d91; color:#fff;
+  text-align:center; padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- ADD YOUR LOGO FILE NAME BELOW -->
+  <img src="logo.png" alt="South Texas Cleaners Logo">
+  <strong>South Texas Cleaners</strong>
+</header>
+
+<div class="scrolling-bar">
+  <div class="scrolling-text">
+    Residential • Commercial • Airbnb • Move-In/Move-Out • Deep Cleaning • Free Estimates • Call/Text (210) 941-8989 • Serving San Antonio & Surrounding Areas •
+  </div>
+</div>
+
+<section class="hero">
+  <h1>Reliable Residential & Commercial Cleaning in South Texas</h1>
+  <p>Professional cleaning you can trust. Fast, affordable, and detail-focused.</p>
+  <a href="tel:12109418989" class="btn">Call Now</a>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Residential Cleaning</div>
+    <div class="card">Commercial Cleaning</div>
+    <div class="card">Airbnb Cleaning</div>
+    <div class="card">Move-In/Move-Out</div>
+    <div class="card">Deep Cleaning</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Get a Free Estimate</h2>
+  <p>Fill out the form or call/text us today.</p>
+
+  <form action="https://formsubmit.co/info@southtexascleaners.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="tel" name="phone" placeholder="Phone Number" required><br>
+    <textarea name="message" placeholder="What service do you need?" required></textarea><br>
+    <button type="submit">Request Quote</button>
+  </form>
+
+  <a href="tel:12109418989" class="btn">(210) 941-8989</a>
+</section>
+
+<section class="section">
+  <h2>Service Area</h2>
+  <iframe class="map"
+    src="https://www.google.com/maps?q=San%20Antonio%20TX&output=embed">
+  </iframe>
+</section>
+
+<footer>
+  South Texas Cleaners • San Antonio, TX • info@southtexascleaners.com • (210) 941-8989
+</footer>
+
+</body>
+</html>
